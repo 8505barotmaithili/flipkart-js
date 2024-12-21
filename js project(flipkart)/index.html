@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><img src="/images/logo.svg" /></li>
+          <li>
+            <button>
+              <i class="ri-search-line" id="i1"></i>search for products,brands
+              and more
+            </button>
+          </li>
+          <li class="mainlist">
+            <a href="login.html"
+              ><i class="ri-account-circle-line mainlist" id="i2"></i>
+              <span> &nbsp;Login</span></a
+            >
+
+            <ul class="list">
+              <li class="nestead">
+                <br />
+                <a href="signup.html">
+                  New
+                  customer?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="signup.html" class="sign"> Sign up?</a>
+                </a>
+                <hr />
+              </li>
+              <li class="nestead" id="user">
+                <a href=""
+                  ><i class="ri-account-circle-line"></i>&nbsp;profile</a
+                >
+              </li>
+              <br />
+
+              <li class="nestead" id="zone">
+                <a href=""
+                  ><i class="ri-ubuntu-line"></i>&nbsp;flipkart plus zone</a
+                >
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-box-1-fill"></i>&nbsp;orders</a>
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""
+                  ><i class="ri-poker-hearts-line"></i>&nbsp;wishlist</a
+                >
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-gift-line"></i>&nbsp;rewards</a>
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-aed-line"></i>&nbsp;gift cards</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html"
+              ><i class="ri-shopping-cart-2-line" id="i3"></i>&nbsp;cart</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="ri-store-2-line" id="i4"></i>&nbsp;become a seller</a
+            >
+          </li>
+          <li id="i10">
+            <a href="#"><i class="ri-more-2-line"></i></a>
+            <ul class="dropdown7">
+              <br /><br />
+              <li>
+                <a href="#"
+                  ><i class="ri-notification-line"></i>&nbsp;&nbsp;notification
+                  prefernces</a
+                >
+              </li>
+              <br /><br />
+              <li>
+                <a href="#">
+                  <i class="ri-customer-service-line"></i>&nbsp;&nbsp;24*7
+                  customer care</a
+                >
+              </li>
+              <br /><br />
+              <li>
+                <i class="ri-guide-fill"></i
+                ><a href="#">&nbsp;&nbsp;advertise</a>
+              </li>
+              <br /><br />
+              <li>
+                <i class="ri-download-2-line"></i
+                ><a href="#">&nbsp;&nbsp;download app</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sub-header">
+      <div class="first-img-box1">
+        <img src="images/g1.webp" />
+        <br />
+        <h6>Grocery</h6>
+      </div>
+
+      <div class="first-img-box1">
+        <img src="images/g2.webp" />
+        <br />
+        <h6>Mobiles</h6>
+      </div>
+
+      <div class="first-img-box1" id="box3">
+        <img src="images/g3.webp" />
+        <br />
+        <h6>Fashion <i class="ri-arrow-drop-down-fill"></i></h6>
+        <ul class="dropdown">
+          <li><a class="dropdown-item" href="#">Men's t-shirt</a></li>
+
+          <li>
+            <a class="dropdown-item" href="#">Men's Casual Shirts</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Men's Formal Shirts</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Men's Kurtas</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Men's Ethnic Sets</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Men's Blazers</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Men's Raincort</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Men's Windcheaters</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Men's Suits</a></li>
+          <li><a class="dropdown-item" href="#">Men's Fabrics</a></li>
+        </ul>
+
+        <ul class="dropdown2">
+          <li><a class="dropdown-item" href="#">Men's Bottom Wear</a></li>
+          <li><a class="dropdown-item" href="#">Men's t-shirt</a></li>
+          <li><a class="dropdown-item" href="#">Women's Ethnic</a></li>
+          <li><a class="dropdown-item" href="#">Men's Footwears</a></li>
+          <li><a class="dropdown-item" href="#">Women's Footwears</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Watches and Accessories</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Women's Westerns</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Bags Suitcases & Luggage</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Kids</a></li>
+          <li><a class="dropdown-item" href="#">Essentials</a></li>
+        </ul>
+      </div>
+
+      <div class="first-img-box1" id="box4">
+        <img src="images/g4.webp" />
+        <ul class="dropdown3">
+          <li>
+            <a class="dropdown-item text-dark" href="#">More in audio</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Electronics GST Store</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Computer Peripherals</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Gaming</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Health & PersonalCare</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Laptop Accessories</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Laptop and Desktop</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">MobileAccessory</a>
+          </li>
+          <li><a class="dropdown-item" href="#">PowerBank</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Smart Home Automation </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Smart Wearables</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Storage</a></li>
+        </ul>
+
+        <ul class="dropdown4">
+          <li>
+            <a class="dropdown-item" href="#">Bluetooth Headphones</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Wired Headphones</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Tru Wireless Earbuds</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Bluetooth Speaker</a></li>
+          <li><a class="dropdown-item" href="#">Soundbars</a></li>
+          <li><a class="dropdown-item" href="#">Home theaters</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Tv Streaming Device</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Remote Control</a></li>
+          <li><a class="dropdown-item" href="#">DTH Set Top Box</a></li>
+        </ul>
+        <br />
+        <h6>Electronic <i class="ri-arrow-drop-down-fill"></i></h6>
+      </div>
+
+      <div class="first-img-box1" id="box5">
+        <img src="images/g5.webp" />
+        <ul class="dropdown5">
+          <li>
+            <a class="dropdown-item" href="#">Curtains & Accessories</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Bath linen</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Floor coverings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Covers & Protectors</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Cushions & Pillows</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Kitchen Linen Sets</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Table Linen Sets</a>
+          </li>
+        </ul>
+        <ul class="dropdown6">
+          <li><a class="dropdown-item" href="#">Furniture</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Living Room Furniture</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Kitchen & Dining </a></li>
+          <li><a class="dropdown-item" href="#">Bedroom Furniture</a></li>
+          <li><a class="dropdown-item" href="#">Bluetooth Speaker</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Space Saving Furniture</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Home Decor</a></li>
+          <li><a class="dropdown-item" href="#">Tools & Utility</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Work Space Furniture</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Kids Furniture</a></li>
+          <li><a class="dropdown-item" href="#">Pet & Gardening</a></li>
+        </ul>
+        <br />
+        <h6>Home & furniture <i class="ri-arrow-drop-down-fill"></i></h6>
+      </div>
+
+      <div class="first-img-box1">
+        <img src="images/g6.webp" />
+        <br />
+        <h6>Appliances</h6>
+      </div>
+      <div class="first-img-box1">
+        <img src="images/g7.webp" />
+        <br />
+        <h6>Travel</h6>
+      </div>
+      <div class="first-img-box1">
+        <img src="images/g8.webp" />
+        <br />
+        <h6>Beauty,toy & more</h6>
+      </div>
+
+      <div class="first-img-box1">
+        <img src="images/g9.webp" />
+        <br />
+        <h6>Two-wheelers</h6>
+      </div>
+    </div>
+
+    <div class="container-slide">
+      <div class="carousel slide" data-bs-ride="carousel" id="one">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/1316eb53d6f52c71.webp" alt="" class="w-100" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="/images/0511ba08d5abe9aa.webp" alt="" class="w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/f7b74e32c435adb6.webp" alt="" class="w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/a76db078b31108e1.webp" alt="" class="w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/dd484f1b19c67712.webp" alt="" class="w-100" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          data-bs-target="#one"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-target="#one"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="image-container">
+      <div class="img-box-container">
+        <h3>Best of electronics</h3>
+        <div class="img-box">
+          <div class="container-swipe">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="airbods">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=70 "
+                  />
+                </div>
+                <div class="swiper-slide" id="iwatch">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/z/1/y/-original-imah3ygfcr3t5fdy.jpeg?q=70"
+                  />
+                </div>
+
+                <div class="swiper-slide" id="fasttrack">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/z/r/d/-original-imagywnzhh3dnqvk.jpeg?q=70"
+                  />
+                </div>
+                <div class="swiper-slide" id="projector">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/projector/q/7/6/i9-pro-10-ei9027-led-projector-egate-original-imah5e3bggu5qcgp.jpeg?q=70"
+                  />
+                </div>
+                <div class="swiper-slide" id="printers">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/k4a7c7k0/printer/y/j/z/canon-e3370-original-imafn2wyyxjjvzd6.jpeg?q=70"
+                  />
+                </div>
+                <div class="swiper-slide" id="tv">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/i/x/5/gw2490-full-hd-24-2024-gw2490-benq-original-imagy6vfbvxjjhpu.jpeg?q=70"
+                  />
+                </div>
+                <div class="swiper-slide" id="shaver">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/l4yi7bk0/trimmer/q/l/1/0-5-3-mm-rechargeable-shaver-trimmer-for-men-electric-nose-original-imagfqg7c3ryt9pa.jpeg?q=70"
+                  />
+                </div>
+
+                <div class="swiper-slide" id="led">
+                  <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/7/m/j/-original-imah4gkh2bvpq2er.jpeg?q=70"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <!-- Add jQuery and Swiper JS -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <script>
+            $(document).ready(function () {
+              // Swiper: Slider
+              var swiper = new Swiper(".swiper-container", {
+                loop: false, // Disable looping
+                slidesPerView: 6, // Always show 6 slides at once
+                spaceBetween: 20, // 20px between slides
+                paginationClickable: true, // Pagination clickability (if you have pagination)
+                navigation: {
+                  nextEl: ".swiper-button-next", // Next button
+                  prevEl: ".swiper-button-prev", // Previous button (optional)
+                },
+                breakpoints: {
+                  1920: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                  },
+                  1028: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                },
+              });
+
+              // Custom behavior for the next button
+              $(".swiper-button-next").on("click", function () {
+                // Move exactly one slide at a time when the next button is clicked
+                swiper.slideNext();
+
+                // Hide the next button permanently after the first click
+                $(this).hide();
+              });
+
+              // Optional: Add custom behavior for the previous button (if you have one)
+              $(".swiper-button-prev").on("click", function () {
+                $(this).fadeOut();
+                swiper.slidePrev();
+                setTimeout(() => {
+                  $(this).fadeIn();
+                }, 500);
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div class="second-box"><img src="/images/adv.webp" /></div>
+    </div>
+
+    <div class="second-container">
+      <div class="second-img-box">
+        <h3>Beauty,food,toys & more</h3>
+        <div class="box">
+          <div class="img-box1" id="pencils">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/sketch-pen/e/n/w/marker-pen-graphic-permanent-marker-pens-48-colors-alcohol-original-imah6u25gdgecndf.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="makhana">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/edible-seed/c/s/y/1-premium-makhana-fox-nuts-pouch-raw-4-farmley-whole-original-imagpebsuqgzjb2a.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="tea">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/coffee/q/f/p/-original-imahyvuvyg2pjeuf.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="car">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/remote-control-toy/t/r/j/-original-imahyhhg5tghspt5.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="teddy">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/l3g7gy80/stuffed-toy/a/q/c/4-feet-stuffed-spongy-hugable-cute-pink-teddy-bear-122-cm-pink-2-original-imagekk8yypvavyx.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="saffola">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/cereal-flake/g/i/i/-original-imah2ypapqbjyhb7.jpeg?q=70"
+            />
+          </div>
+          <div class="img-box1" id="instruments">
+            <img
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/musical-keyboard/g/l/n/37-0-2-a566-kids-piano-keyboard-piano-for-kids-with-microphone-original-imah3sgvg8ugnkhp.jpeg?q=70"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("airbods").addEventListener("click", function () {
+        window.location.href = "airbuds.html";
+      });
+
+      document.getElementById("iwatch").addEventListener("click", function () {
+        window.location.href = "iwatch.html";
+      });
+
+      document
+        .getElementById("fasttrack")
+        .addEventListener("click", function () {
+          window.location.href = "fasttrack.html";
+        });
+
+      document
+        .getElementById("projector")
+        .addEventListener("click", function () {
+          window.location.href = "projector.html";
+        });
+
+      document
+        .getElementById("printers")
+        .addEventListener("click", function () {
+          window.location.href = "printers.html";
+        });
+
+      document.getElementById("tv").addEventListener("click", function () {
+        window.location.href = "tv.html";
+      });
+
+      document.getElementById("shaver").addEventListener("click", function () {
+        window.location.href = "shaver.html";
+      });
+
+      document.getElementById("led").addEventListener("click", function () {
+        window.location.href = "led.html";
+      });
+
+      document.getElementById("pencils").addEventListener("click", function () {
+        window.location.href = "pencils.html";
+      });
+
+      document.getElementById("makhana").addEventListener("click", function () {
+        window.location.href = "grains.html";
+      });
+
+      document.getElementById("tea").addEventListener("click", function () {
+        window.location.href = "tea.html";
+      });
+
+      document.getElementById("car").addEventListener("click", function () {
+        window.location.href = "car.html";
+      });
+
+      document.getElementById("teddy").addEventListener("click", function () {
+        window.location.href = "teddy.html";
+      });
+
+      document.getElementById("saffola").addEventListener("click", function () {
+        window.location.href = "saffola.html";
+      });
+
+      document
+        .getElementById("instruments")
+        .addEventListener("click", function () {
+          window.location.href = "instrument.html";
+        });
+    </script>
+
+    <!-- top stories -->
+    <div class="top-stories">
+      <div class="small-container">
+        <h4>Top Stories:brand directory</h4>
+        <span
+          >MOST SEARCHED FOR ON FLIPKART: iphone 16 plus&nbsp;|&nbsp;iphone 16
+          plus &nbsp;| iphone 16 pro &nbsp;|&nbsp;iphone 16 pro max
+          &nbsp;|&nbsp;whoop band &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages
+          orders&nbsp;|&nbsp;returns orders&nbsp;|&nbsp;gift cards
+          store&nbsp;|&nbsp;pay later&nbsp;|&nbsp;help centre&nbsp;|&nbsp;vivo X
+          100&nbsp;|&nbsp;spoyl store&nbsp;|&nbsp;samsung folds5|&nbsp; iphone
+          16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages orders&nbsp;|&nbsp;
+          iphone 16 plus&nbsp;|&nbsp;iphone 16 plus &nbsp;| iphone 16 pro
+          &nbsp;|&nbsp;iphone 16 pro max &nbsp;|&nbsp;whoop band
+          &nbsp;|&nbsp;oppo find x8&nbsp;|&nbsp;flipkart
+          minutes&nbsp;|&nbsp;flipkart exchange&nbsp;|&nbsp; flipkart
+          reset&nbsp;|&nbsp;nothing phone 2a
+          plus&nbsp;|&nbsp;sarees&nbsp;|&nbsp;pocket bazaar&nbsp;|&nbsp;iphone
+          15&nbsp;|&nbsp;iphone 15 plus&nbsp;|&nbsp;manages
+          orders&nbsp;|&nbsp;</span
+        >
+        <div class="one-container mt-4">
+          <h4>flipkart:the one-stop shopping destination</h4>
+          <div class="span">
+            e-commerce is revolutionizing the way we all shop in india. why do
+            you want to hop from one store to another in search of the latest
+            phone when you can find it on the on the internet in a single click?
+            not only mobiles.flipkart houses everything you can possibly imagine
+            from trending electronics like laptops,tablets,smartphones and
+            mobile accessories to in -vogue fachion staples like shoes,clothing
+            and lifestyle accessories from modern furniture like sofa
+            sets,dinning tables and wardrobes to appliances that make your life
+            easy like washing machines,tvs,acs,mixer grinder juicers and othre
+            ti,e-saving kitchen and small appliances; flipkart is the ultimate
+            destination for all your shopping needs. with its wide range of
+            products, a wide selection of brands, and a customer-centric
+            approach, we make it easy for you to find the perfect product for
+            your everyday needs.
+            <br />
+            what's more ,with our year-round shopping festivals and events,our
+            prices are irresistible.we're sure you'll find yourslef picking up
+            more than what you had in mind.if you should shop from flipkart when
+            there are multiple options available to you,well,the below will
+            answer your question.
+          </div>
+        </div>
+        <div class="two-container mt-4">
+          <h4>flipkart plus</h4>
+          <br />
+          <span>
+            a world of limitless possibly great awaits you-flipkart plus was
+            kicjstarted as loyalty reward programme for all its regular
+            customres at zero subscription fee.all you need is 500 supercoins to
+            be a part of this services.for every 100 rupees spent on flipkart
+            order,plus members earns 4 supercoins & non-plus members earn 2
+            supercoins,free delivery,early access during sales and shopping
+            festivals,exchange offers and priority customer service are the top
+            benefits to a flipkart plus member.in short,earn more when you shop
+            more|
+          </span>
+        </div>
+        <div class="three-container mt-4">
+          <h4>no cost emi</h4>
+          <span>
+            in an attempt to make high-end products accessible to all,our no
+            cost emi plan enables you to shop with us under emi,without shellimg
+            out any processing fee.applicable on select mobiles,laptops,large
+            and small appliances,furniture,electronics and watches, you can now
+            shop.
+          </span>
+        </div>
+        <div class="four-container mt-4">
+          <h4>emi on debit cards</h4>
+          <span>
+            with flipkart debit cards,you can avail emi on your next purchase,in
+            addition to your regular payment method.no need to worry about the
+            fees,you just need to pay the remaining amount at the time of
+            purchase regular payment method.no need to worry about the fees,you
+            just need to pay the remaining amount at the time of purchase
+            regular payment method.no need to worry about the fees,you just need
+            to pay the remaining amount at the time of purchase regular payment
+            method.no need to worry about the fees,you just need to pay the
+            remaining amount at the time of purchase regular payment method.no
+            need to worry about the fees,you just need to pay the remaining
+            amount at the time of purchase.
+          </span>
+        </div>
+        <div class="fifth-container mt-4">
+          <h4>mobile exchange offers</h4>
+          <span>
+            flipkart offers various mobile exchange offers,which can save you
+            money on your next purchase.you can exchange your old smartphone
+            with a new one, or exchange your old phone with a new one, and earn
+            extra cash back.you can exchange your old smartphone with a new one,
+            or exchange your old phone with a new one, and earn extra cash
+            back.you can exchange your old smartphone with a new one, or
+            exchange your old phone with a new one, and earn extra cash back.you
+            can exchange your old smartphone with a new one, or exchange your
+            old phone with a new one, and earn extra cash back.you can exchange
+            your old smartphone with a new one, or exchange your old phone with
+            a new one, and earn extra cash back.
+          </span>
+        </div>
+        <div class="sixth-container mt-4">
+          <h4>lifstyle</h4>
+          <span>
+            shop for the latest fashion trends,beauty products,home decor and
+            other lifestyle products at flipkart. shop for the latest fashion
+            trends,beauty products,home decor and other lifestyle products at
+            flipkart. shop for the latest fashion trends,beauty products,home
+            decor and other lifestyle products at flipkart. shop for the latest
+            fashion trends,beauty products,home decor and other lifestyle
+            products at flipkart. shop for the latest fashion trends,beauty
+            products,home decor and other lifestyle products at flipkart.
+          </span>
+        </div>
+        <div class="seventh-container mt-4">
+          <h4>home and furniture</h4>
+          <span>
+            cost emi plan enables you to shop with us under emi,without shellimg
+            out any processing fee.applicable on select mobiles,laptops,large
+            and small appliances,furniture,electronics and watches, you can now
+            shop. shop for the latest fashion trends,beauty products,home decor
+            and other lifestyle products at flipkart. shop for the latest
+            fashion trends,beauty products,home decor and other lifestyle
+            products at flipkart. shop for the latest fashion trends,beauty
+            products,home decor and other lifestyle products at flipkart. shop
+            for the latest fashion trends,beauty products,home decor and other
+            lifestyle products at flipkart. shop for the latest fashion
+            trends,beauty products,home decor and other lifestyle products at
+            flipkart.
+          </span>
+        </div>
+        <div class="eight-container mt-4">
+          <h4>baby and kids</h4>
+          <spna>
+            shop for the latest fashion trends,beauty products,home decor and
+            other lifestyle products at flipkart. shop for the latest fashion
+            cost emi plan enables you to shop with us under emi,without shellimg
+            out any processing fee.applicable on select mobiles,laptops,large
+            and small appliances,furniture,electronics and watches, you can now
+            shop. trends,beauty products,home decor and other lifestyle products
+            at flipkart. shop for the latest fashion trends,beauty products,home
+            decor and other lifestyle products at flipkart. shop for the latest
+            fashion trends,beauty products,home decor and other lifestyle
+            products at flipkart. shop for the latest fashion trends,beauty
+            products,home decor and other lifestyle products at flipkart. shop
+            for the latest fashion trends,beauty products,home decor and other
+            lifestyle products at flipkart. shop for the latest fashion trends,
+            beauty products, home decor and other lifestyle products at
+            flipkart. shop for the latest fashion trends,beauty products,home
+            decor and other lifestyle products at flipkart.
+          </spna>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 foot-box">
+            <h6>ABOUT</h6>
+            <ul class="foot_list">
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">FlipKart Stories</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">COrporate Information</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>GROUP COMPANIES</h6>
+            <ul class="foot_list">
+              <li><a href="">Myntra</a></li>
+              <li><a href="">CLearTrip </a></li>
+              <li><a href="">Shopsy</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>HELP</h6>
+            <ul class="foot_list">
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Cancellation & Return</a></li>
+              <li><a href=""> FAQs</a></li>
+              <li><a href="">Report Infringement</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>CONSUMER POLICY</h6>
+            <ul class="foot_list">
+              <li><a href="">Cancellation & Return</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">SItemap</a></li>
+              <li><a href=""> EPR Compliance</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>Mail Us:</h6>
+            <p class="para">Flipkart Internet Private Limited,</p>
+            <p class="para">Buildings Alyssa, Begonia &amp;</p>
+            <p class="para">Clove Embassy Tech Village,</p>
+            <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p class="para">Bengaluru, 560103,</p>
+            <p class="para">Karnataka, India</p>
+            <h6>Social :</h6>
+            <ul class="media">
+              <li>
+                <a href=""><i class="ri-facebook-circle-line"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-twitter-x-line"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-youtube-line"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>Registered Office Address:</h6>
+            <p class="para">Flipkart Internet Private Limited,</p>
+            <p class="para">Buildings Alyssa, Begonia &amp;</p>
+            <p class="para">Clove Embassy Tech Village,</p>
+            <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p class="para">Bengaluru, 560103,</p>
+            <p class="para">Karnataka, India</p>
+            <p class="para">CIN : U51109KA2012PTC066107</p>
+            <p class="para">Telephone: 044-45614700 /044-67415800</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-store-2-line"></i> Become a seller</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-bard-line"></i> Adevertise</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-gift-line"></i> Gift cards</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-question-line"></i> Help center</a>
+              </li>
+            </div>
+            <div class="col-4">
+              <img
+                src="images/footer.svg"
+                height="20px"
+                alt=""
+                style="position: absolute; font-size: 12px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

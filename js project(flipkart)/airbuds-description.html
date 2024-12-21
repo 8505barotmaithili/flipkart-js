@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="desc.css" />
+    <!-- remix icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <img
+              src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            />
+          </li>
+          <li>
+            <button>
+              <i class="ri-search-line" id="i1"></i>search for products,brands
+              and more
+            </button>
+          </li>
+          <li class="mainlist">
+            <a href="login.html"
+              ><i class="ri-account-circle-line mainlist" id="i2"></i>
+              <span> &nbsp;Login</span></a
+            >
+
+            <ul class="list">
+              <li class="nestead">
+                <br />
+                <a href="signup.html">
+                  &nbsp; New
+                  customer?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="signup.html" class="sign"> Sign up?</a>
+                </a>
+                <hr />
+              </li>
+              <li class="nestead" id="user">
+                <a href=""
+                  ><i class="ri-account-circle-line"></i>&nbsp;profile</a
+                >
+              </li>
+              <br />
+
+              <li class="nestead" id="zone">
+                <a href=""
+                  ><i class="ri-ubuntu-line"></i>&nbsp;flipkart plus zone</a
+                >
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-box-1-fill"></i>&nbsp;orders</a>
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""
+                  ><i class="ri-poker-hearts-line"></i>&nbsp;wishlist</a
+                >
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-gift-line"></i>&nbsp;rewards</a>
+              </li>
+              <br />
+              <li class="nestead" id="zone">
+                <a href=""><i class="ri-aed-line"></i>&nbsp;gift cards</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html"
+              ><i class="ri-shopping-cart-2-line" id="i3"></i>&nbsp;cart</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="ri-store-2-line" id="i4"></i>&nbsp;become a seller</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="ri-more-2-line"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-box">
+      <div class="left-box">
+        <img src="" id="image" alt="Product Image" />
+
+        <!-- <h4>price: <span id="price"></span></h4> -->
+
+        <button id="btn1">
+          <i class="ri-shopping-cart-2-fill"></i>Add to cart
+        </button>
+        <button id="btn2"><i class="ri-flashlight-fill"></i>buy now</button>
+      </div>
+      <div class="right-box">
+        <h4><span id="product_name"></span></h4>
+        <br />
+        <h4>price: <span id="price"></span></h4>
+        <br />
+        <!-- details -->
+        <h5>Available offers</h5>
+        <br />
+        <h6>
+          <i class="ri-chat-2-line"></i>
+          bank offer 5% unlimited cashback on Flipkart Axis Bank Credit CardT&C
+        </h6>
+        <br />
+        <h6>
+          <i class="ri-chat-2-line"></i>
+          Bank Offer10% off up to ₹750 on HDFC Bank Credit Card EMI on 3 months
+          tenure. Min. Txn Value: ₹5000T&C
+        </h6>
+        <br />
+        <h6>
+          <i class="ri-chat-2-line"></i>
+          Special PriceGet extra 36% off (price inclusive of cashback/coupon)T&C
+        </h6>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 foot-box">
+            <h6>ABOUT</h6>
+            <ul class="foot_list">
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">FlipKart Stories</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">COrporate Information</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>GROUP COMPANIES</h6>
+            <ul class="foot_list">
+              <li><a href="">Myntra</a></li>
+              <li><a href="">CLearTrip </a></li>
+              <li><a href="">Shopsy</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>HELP</h6>
+            <ul class="foot_list">
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Cancellation & Return</a></li>
+              <li><a href=""> FAQs</a></li>
+              <li><a href="">Report Infringement</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>CONSUMER POLICY</h6>
+            <ul class="foot_list">
+              <li><a href="">Cancellation & Return</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">SItemap</a></li>
+              <li><a href=""> EPR Compliance</a></li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>Mail Us:</h6>
+            <p class="para">Flipkart Internet Private Limited,</p>
+            <p class="para">Buildings Alyssa, Begonia &amp;</p>
+            <p class="para">Clove Embassy Tech Village,</p>
+            <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p class="para">Bengaluru, 560103,</p>
+            <p class="para">Karnataka, India</p>
+            <h6>Social :</h6>
+            <ul class="media">
+              <li>
+                <a href=""><i class="ri-facebook-circle-line"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-twitter-x-line"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-youtube-line"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 foot-box">
+            <h6>Registered Office Address:</h6>
+            <p class="para">Flipkart Internet Private Limited,</p>
+            <p class="para">Buildings Alyssa, Begonia &amp;</p>
+            <p class="para">Clove Embassy Tech Village,</p>
+            <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p class="para">Bengaluru, 560103,</p>
+            <p class="para">Karnataka, India</p>
+            <p class="para">CIN : U51109KA2012PTC066107</p>
+            <p class="para">Telephone: 044-45614700 /044-67415800</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-store-2-line"></i> Become a seller</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-bard-line"></i> Adevertise</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-gift-line"></i> Gift cards</a>
+              </li>
+            </div>
+            <div class="col-2 sub-box">
+              <li>
+                <a href=""><i class="ri-question-line"></i> Help center</a>
+              </li>
+            </div>
+            <div class="col-4">
+              <img
+                src="images/footer.svg"
+                height="20px"
+                alt=""
+                style="position: absolute; font-size: 12px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const parm = new URLSearchParams(window.location.search);
+
+      let image = parm.get("image_url");
+      document.getElementById("image").src = image;
+
+      let name = parm.get("product_name");
+      document.getElementById("product_name").innerText = name;
+
+      let price = parm.get("price");
+      document.getElementById("price").innerText = price;
+    </script>
+    <script src="addtocart.js"></script>
+  </body>
+</html>

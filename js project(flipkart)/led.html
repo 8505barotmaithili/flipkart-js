@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="led.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <body>
+      <!-- header -->
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <img
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+              />
+            </li>
+            <li>
+              <button>
+                <i class="ri-search-line" id="i1"></i>search for products,brands
+                and more
+              </button>
+            </li>
+            <li class="mainlist">
+              <a href="login.html"
+                ><i class="ri-account-circle-line mainlist" id="i2"></i>
+                <span> &nbsp;Login</span></a
+              >
+
+              <ul class="list">
+                <li class="nestead">
+                  <br />
+                  <a href="signup.html">
+                    New
+                    customer?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="signup.html" class="sign"> Sign up?</a>
+                  </a>
+                  <hr />
+                </li>
+                <li class="nestead" id="user">
+                  <a href=""
+                    ><i class="ri-account-circle-line"></i>&nbsp;profile</a
+                  >
+                </li>
+                <br />
+
+                <li class="nestead" id="zone">
+                  <a href=""
+                    ><i class="ri-ubuntu-line"></i>&nbsp;flipkart plus zone</a
+                  >
+                </li>
+                <br />
+                <li class="nestead" id="zone">
+                  <a href=""><i class="ri-box-1-fill"></i>&nbsp;orders</a>
+                </li>
+                <br />
+                <li class="nestead" id="zone">
+                  <a href=""
+                    ><i class="ri-poker-hearts-line"></i>&nbsp;wishlist</a
+                  >
+                </li>
+                <br />
+                <li class="nestead" id="zone">
+                  <a href=""><i class="ri-gift-line"></i>&nbsp;rewards</a>
+                </li>
+                <br />
+                <li class="nestead" id="zone">
+                  <a href=""><i class="ri-aed-line"></i>&nbsp;gift cards</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="cart.html"
+                ><i class="ri-shopping-cart-2-line" id="i3"></i>&nbsp;cart</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="ri-store-2-line" id="i4"></i>&nbsp;become a seller</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="ri-more-2-line"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="header-container">
+        <ul>
+          <li>electroncs<i class="ri-arrow-drop-down-line"></i></li>
+          <li>tvs & applianices<i class="ri-arrow-drop-down-line"></i></li>
+          <li>men<i class="ri-arrow-drop-down-line"></i></li>
+          <li>women<i class="ri-arrow-drop-down-line"></i></li>
+          <li>baby & kids<i class="ri-arrow-drop-down-line"></i></li>
+          <li>home & furniture<i class="ri-arrow-drop-down-line"></i></li>
+          <li>sports,books& more<i class="ri-arrow-drop-down-line"></i></li>
+          <li>flights<i class="ri-arrow-drop-down-line"></i></li>
+          <li>offer zone<i class="ri-arrow-drop-down-line"></i></li>
+        </ul>
+      </div>
+
+      <div class="main-container">
+        <div class="first-div">
+          <h3>Filters</h3>
+          <div class="single-l"></div>
+          <div class="boxes">
+            <ul>
+              <br />
+              <li id="categories">categories</li>
+              <br />
+              <li><i class="ri-arrow-left-s-line"></i>audio & video</li>
+              <br />
+              <li><i class="ri-arrow-left-s-line"></i>headset</li>
+              <br />
+              <li><i class="ri-arrow-left-s-line"></i>earphones</li>
+              <br />
+              <li><i class="ri-arrow-left-s-line"></i>wireless earphones</li>
+              <br />
+              <li id="categories">true wireless</li>
+
+              <div class="single-l"></div>
+              <br />
+              <li id="categories">price</li>
+              <br />
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      get invoice available
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;gst invoice available
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      headphone design
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;behind the neck<br /><br />
+                      <input
+                        type="checkbox"
+                      />&nbsp;&nbsp;canalphone<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;wireless<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;bluetooth
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      connectivity
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;bluetooth<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;bluetooth & wired
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingfour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      features
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingfour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;deep baas<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;fast charging
+
+                      <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;flatwire <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;inline remote
+                      <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;sweat proof
+                      <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;with microphone
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingfive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefive"
+                      aria-expanded="false"
+                      aria-controls="collapsefive"
+                    >
+                      color
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingfive"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;black<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;blue <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;clear <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;gold <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;brown
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsesix"
+                      aria-expanded="false"
+                      aria-controls="collapsesix"
+                    >
+                      discount
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsesix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsix"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <input type="checkbox" />&nbsp;&nbsp;70% or more<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;60% or more
+                      <br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;50% or more<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;40% or more<br /><br />
+                      <input type="checkbox" />&nbsp;&nbsp;30% or more<br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="second-div">
+          <div class="led"></div>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <p>
+          ORAIMO Headset ,SHOPLINE Headset ,Leaf Ear Headset ,Pebble Headset
+          ,Creative Headset ,Sony Headset ,Marshall Headset ,truke Headset
+          ,Czech Headset ,HRX Headset ,Huawei Headset ,RoyalRich Headset
+          ,Logitech Headset ,Blaupunkt Headset ,Fire-Boltt Headset ,WROGN
+          Headset ,Ubon Headset ,Drumstone Headset ,Audio & Video ,Hetton
+          Headset Buy Headphones Online at Flipkart
+          <br />
+          Headphones have become a must-have gadget in today's world owing to
+          the need of listening to music. It is important to buy these
+          headphones from a reliable online store as there are too many
+          defective and duplicate products being sold. Known for customer
+          friendly policies, Flipkart is one website that you can rely on to buy
+          the best headphones.
+          <br />
+          Check out new launches: truke b097 bluetooth headset, truke deep bass,
+          truke B120, truke b120 price Also Check: Noise Tune Active Plus, Noise
+          Tune Active Plus bluetooth, noise tune elite sport bluetooth, noise
+          tune elite sport
+          <br />
+          Mivi Brand: Mivi Bluetooth, Mivi Duopods, mivi duopods m40 Intex
+          Brand: Intex BT MUSIQUE Pro, Intex BT MUSIQUE BASS, bt musique bass,
+          Intex MUSIQUE POWER, Intex MUSIQUE Flexi, Intex ROAR 101
+        </p>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 foot-box">
+              <h6>ABOUT</h6>
+              <ul class="foot_list">
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">FlipKart Stories</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">COrporate Information</a></li>
+              </ul>
+            </div>
+            <div class="col-2 foot-box">
+              <h6>GROUP COMPANIES</h6>
+              <ul class="foot_list">
+                <li><a href="">Myntra</a></li>
+                <li><a href="">CLearTrip </a></li>
+                <li><a href="">Shopsy</a></li>
+              </ul>
+            </div>
+            <div class="col-2 foot-box">
+              <h6>HELP</h6>
+              <ul class="foot_list">
+                <li><a href="">Payment</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Cancellation & Return</a></li>
+                <li><a href=""> FAQs</a></li>
+                <li><a href="">Report Infringement</a></li>
+              </ul>
+            </div>
+            <div class="col-2 foot-box">
+              <h6>CONSUMER POLICY</h6>
+              <ul class="foot_list">
+                <li><a href="">Cancellation & Return</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">SItemap</a></li>
+                <li><a href=""> EPR Compliance</a></li>
+              </ul>
+            </div>
+            <div class="col-2 foot-box">
+              <h6>Mail Us:</h6>
+              <p class="para">Flipkart Internet Private Limited,</p>
+              <p class="para">Buildings Alyssa, Begonia &amp;</p>
+              <p class="para">Clove Embassy Tech Village,</p>
+              <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+              <p class="para">Bengaluru, 560103,</p>
+              <p class="para">Karnataka, India</p>
+              <h6>Social :</h6>
+              <ul class="media">
+                <li>
+                  <a href=""><i class="ri-facebook-circle-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-x-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-youtube-line"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2 foot-box">
+              <h6>Registered Office Address:</h6>
+              <p class="para">Flipkart Internet Private Limited,</p>
+              <p class="para">Buildings Alyssa, Begonia &amp;</p>
+              <p class="para">Clove Embassy Tech Village,</p>
+              <p class="para">Outer Ring Road, Devarabeesanahalli Village,</p>
+              <p class="para">Bengaluru, 560103,</p>
+              <p class="para">Karnataka, India</p>
+              <p class="para">CIN : U51109KA2012PTC066107</p>
+              <p class="para">Telephone: 044-45614700 /044-67415800</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="sub-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-2 sub-box">
+                <li>
+                  <a href=""><i class="ri-store-2-line"></i> Become a seller</a>
+                </li>
+              </div>
+              <div class="col-2 sub-box">
+                <li>
+                  <a href=""><i class="ri-bard-line"></i> Adevertise</a>
+                </li>
+              </div>
+              <div class="col-2 sub-box">
+                <li>
+                  <a href=""><i class="ri-gift-line"></i> Gift cards</a>
+                </li>
+              </div>
+              <div class="col-2 sub-box">
+                <li>
+                  <a href=""><i class="ri-question-line"></i> Help center</a>
+                </li>
+              </div>
+              <div class="col-4">
+                <img
+                  src="images/footer.svg"
+                  height="20px"
+                  alt=""
+                  style="position: absolute; font-size: 12px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="led.js"></script>
+    </body>
+  </body>
+</html>
